@@ -41,7 +41,7 @@ const createForm = (e) => {
   inputMail.setAttribute("placeholder", "abc@art.com");
 
   const submitBtn = document.createElement("button");
-  submitBtn.setAttribute("type", "submit");
+  submitBtn.setAttribute("type", "button");
   submitBtn.innerHTML = "Submit";
 
   form.appendChild(label);
@@ -54,6 +54,8 @@ const createForm = (e) => {
   form.appendChild(br.cloneNode());
   form.appendChild(labelMail);
   form.appendChild(inputMail);
+
+  form.appendChild(br.cloneNode());
   form.appendChild(submitBtn);
 
   output.appendChild(form);
