@@ -59,6 +59,8 @@ const createForm = (e) => {
   form.appendChild(submitBtn);
 
   output.appendChild(form);
+
+  btn.setAttribute("disabled", "true");
 };
 
 btn.addEventListener("click", createForm);
